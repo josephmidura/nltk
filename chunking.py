@@ -1,4 +1,7 @@
 # I have a separate file for chinking!!!
+# chunking = grouping
+# chinking = removing
+# the state of union file may be too big
 
 import nltk
 from nltk.corpus import state_union
@@ -16,7 +19,8 @@ def process_content():
         for i in tokenized:
             words = nltk.word_tokenize(i)
             tagged = nltk.pos_tag(words)
-            chunkGram = r"""Chunk: {<RB.?>*<VB.?>*<NNP>+<NN>?}"""
+            chunkGram = r"""Chunk: {<RB.?>*<VB.?>*<NNP>+<NN>?}
+            """#r reg exp, use triple quotes cause these get long
             chunkParser = nltk.RegexpParser(chunkGram)
             chunked = chunkParser.parse(tagged)
             
@@ -25,7 +29,7 @@ def process_content():
             for subtree in chunked.subtrees(filter=lambda t: t.label() == 'Chunk'):
                 print(subtree)
 
-            chunked.draw()
+            chunked.draw() # uses matplotlib
 
     except Exception as e:
         print(str(e))
