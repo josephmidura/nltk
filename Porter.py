@@ -1,4 +1,4 @@
-# some practice with tokenizing words and sentences 
+# tokenizing words and sentences 
 
 from nltk.stem import PorterStemmer
 from nltk.tokenize import sent_tokenize, word_tokenize
