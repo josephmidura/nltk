@@ -1,6 +1,3 @@
-# the state of union file may be too big for my old machine
-# try with a smaller one
-
 import nltk
 from nltk.corpus import state_union
 from nltk.tokenize import PunktSentenceTokenizer
