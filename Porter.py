@@ -3,7 +3,8 @@
 
 from nltk.stem import PorterStemmer
 from nltk.tokenize import word_tokenize 
-# could it be faster if i use sent_tokenize?
+
+# could it be faster if i use sent_tokenize? 
 
 ps = PorterStemmer()
 
