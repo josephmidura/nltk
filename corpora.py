@@ -1,5 +1,4 @@
 # open gutenberg vible and read the first few lines
-# open gutenberg vible and read the first few lines
 
 from nltk.tokenize import sent_tokenize, PunktSentenceTokenizer
 from nltk.corpus import gutenberg
