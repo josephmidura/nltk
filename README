@@ -1,2 +1,7 @@
-# experimenting with the natural language functions
+# Experimenting with the natural language functions
+#
+# Warning to future me: current version of pipenv doesn't run well if installed
+# via Homebrew. See here for details:
+# https://pipenv.pypa.io/en/latest/install/#installing-pipenv
+#
 
